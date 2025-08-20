@@ -70,9 +70,27 @@ export default function Index() {
   const [isDemoPlaying, setIsDemoPlaying] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-black-800 to-purple-950">
+    <div className="min-h-screen bg-gradient-to-br from-black via-black-800 to-purple-950 relative overflow-hidden">
+      {/* Shooting Stars Background */}
+      <ShootingStars
+        starColor="#9333EA"
+        trailColor="#7C3AED"
+        minSpeed={8}
+        maxSpeed={20}
+        minDelay={2000}
+        maxDelay={5000}
+      />
+      <ShootingStars
+        starColor="#A855F7"
+        trailColor="#8B5CF6"
+        minSpeed={5}
+        maxSpeed={15}
+        minDelay={3000}
+        maxDelay={6000}
+      />
+
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden z-10">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-music-600/20 via-emotion-purple/10 to-emotion-blue/20 animate-pulse" />
         <div className="absolute top-20 left-10 w-64 h-64 bg-emotion-purple/10 rounded-full blur-3xl animate-pulse" />
