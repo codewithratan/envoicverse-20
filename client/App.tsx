@@ -8,7 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Index from "./pages/Index";
-import Recipes from "./pages/Recipes";
+import Artists from "./pages/Artists";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -23,13 +23,22 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/artists" element={<Artists />} />
           <Route
             path="/community"
             element={
               <Placeholder
-                title="Community Hub"
-                description="Connect with fellow guacamole enthusiasts, share recipes, and discover new variations from around the world."
+                title="Music Community"
+                description="Connect with fellow music lovers, discover new artists, and engage with the emotion-driven music ecosystem."
+              />
+            }
+          />
+          <Route
+            path="/festivals"
+            element={
+              <Placeholder
+                title="Festival Network"
+                description="Explore our partner festivals and live events where digital artists transition to real-world stages."
               />
             }
           />
@@ -37,8 +46,8 @@ const App = () => (
             path="/about"
             element={
               <Placeholder
-                title="About Glowing Guacamole"
-                description="Learn about our mission to spread the joy of perfect guacamole and the story behind our glowing recipes."
+                title="About EnvoicVerse"
+                description="Learn about our mission to create India's most inclusive and emotionally intelligent music ecosystem."
               />
             }
           />
@@ -47,7 +56,7 @@ const App = () => (
             element={
               <Placeholder
                 title="Get in Touch"
-                description="Have a question, suggestion, or want to share your own guacamole creation? We'd love to hear from you!"
+                description="Have questions about our platform? Want to partner with us? We'd love to hear from you!"
               />
             }
           />
