@@ -5,7 +5,8 @@ import { Menu, X, Music, Home, Mic, Users, Radio, Info, Mail, Play, Headphones }
 
 const navItems = [
   { name: "Home", href: "/", icon: Home },
-  { name: "For Artists", href: "/artists", icon: Mic, comingSoon: true },
+  { name: "For Artists", href: "/artists", icon: Mic },
+  { name: "Tech Demo", href: "/demo", icon: Play },
   { name: "Community", href: "/community", icon: Users, comingSoon: true },
   { name: "Festivals", href: "/festivals", icon: Radio, comingSoon: true },
   { name: "About", href: "/about", icon: Info, comingSoon: true },
