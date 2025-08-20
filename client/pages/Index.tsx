@@ -224,6 +224,68 @@ export default function Index() {
         </div>
       </div>
 
+      {/* Tech Showcase Section */}
+      <div className="bg-gradient-to-r from-music-800 via-music-900 to-music-950 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Powered by Advanced AI Technology
+            </h2>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto mb-12">
+              Experience our cutting-edge NeuroBehavioral Rhythm Technology through interactive demonstrations
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+              <Card className="bg-music-700/30 border-music-600/50 backdrop-blur-sm text-center hover:bg-music-700/50 transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-emotion-purple to-emotion-blue flex items-center justify-center glow">
+                    <Brain className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle className="text-white">Emotion Detection</CardTitle>
+                  <CardDescription className="text-white/70">
+                    AI analyzes behavioral patterns to understand your emotional state
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="bg-music-700/30 border-music-600/50 backdrop-blur-sm text-center hover:bg-music-700/50 transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-emotion-blue to-emotion-gold flex items-center justify-center glow-blue">
+                    <Zap className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle className="text-white">Real-time Adaptation</CardTitle>
+                  <CardDescription className="text-white/70">
+                    Music recommendations adapt instantly to your mood changes
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="bg-music-700/30 border-music-600/50 backdrop-blur-sm text-center hover:bg-music-700/50 transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-emotion-gold to-emotion-purple flex items-center justify-center glow-gold">
+                    <Sparkles className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle className="text-white">Interactive Visualization</CardTitle>
+                  <CardDescription className="text-white/70">
+                    See your music data come alive through particle-based animations
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+
+            <Button
+              size="lg"
+              variant="outline"
+              className="px-10 py-6 text-xl border-white text-white hover:bg-white/10 transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.location.href = '/demo'}
+            >
+              <Sparkles className="w-6 h-6 mr-3" />
+              View Interactive Demo
+            </Button>
+          </div>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-music-600 via-emotion-purple to-emotion-blue py-20">
         <div className="container mx-auto px-4 text-center">
