@@ -69,7 +69,7 @@ export default function Index() {
   const [isDemoPlaying, setIsDemoPlaying] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-music-50 via-background to-music-100">
+    <div className="min-h-screen bg-gradient-to-br from-black via-black-800 to-purple-950">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         {/* Animated Background */}
