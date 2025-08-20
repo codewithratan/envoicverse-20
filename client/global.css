@@ -9,129 +9,129 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 220 25% 97%;
-    --foreground: 220 15% 8%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
 
-    --card: 220 20% 98%;
-    --card-foreground: 220 15% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 220 20% 98%;
-    --popover-foreground: 220 15% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 260 60% 45%;
-    --primary-foreground: 220 25% 97%;
+    --primary: 270 80% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 25% 88%;
-    --secondary-foreground: 220 15% 12%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 220 20% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 280 80% 75%;
-    --accent-foreground: 220 15% 12%;
+    --accent: 270 80% 60%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 85%;
-    --input: 220 15% 85%;
-    --ring: 260 60% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 270 80% 50%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 20% 96%;
-    --sidebar-foreground: 220 15% 25%;
-    --sidebar-primary: 260 60% 45%;
-    --sidebar-primary-foreground: 220 25% 97%;
-    --sidebar-accent: 220 25% 90%;
-    --sidebar-accent-foreground: 220 15% 15%;
-    --sidebar-border: 220 15% 80%;
-    --sidebar-ring: 260 60% 50%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 15%;
+    --sidebar-primary: 270 80% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 270 80% 50%;
 
-    /* Music platform color palette */
-    --music-50: 220 60% 95%;
-    --music-100: 225 55% 88%;
-    --music-200: 230 50% 80%;
-    --music-300: 235 50% 70%;
-    --music-400: 240 50% 60%;
-    --music-500: 245 60% 50%;
-    --music-600: 250 65% 40%;
-    --music-700: 255 70% 30%;
-    --music-800: 260 75% 20%;
-    --music-900: 265 80% 15%;
-    --music-950: 270 85% 10%;
+    /* Black and Purple color palette */
+    --music-50: 270 20% 98%;
+    --music-100: 270 20% 95%;
+    --music-200: 270 15% 90%;
+    --music-300: 270 15% 80%;
+    --music-400: 270 15% 70%;
+    --music-500: 270 20% 60%;
+    --music-600: 270 30% 50%;
+    --music-700: 270 40% 40%;
+    --music-800: 270 50% 30%;
+    --music-900: 270 60% 20%;
+    --music-950: 270 70% 10%;
 
     /* Emotion-driven accent colors */
-    --emotion-purple: 280 100% 70%;
-    --emotion-blue: 240 100% 70%;
-    --emotion-gold: 45 100% 60%;
+    --emotion-purple: 270 100% 60%;
+    --emotion-blue: 270 100% 40%;
+    --emotion-gold: 270 80% 70%;
 
     /* Glowing accent colors */
-    --glow-purple: 280 100% 70%;
-    --glow-blue: 240 100% 70%;
-    --glow-gold: 45 100% 60%;
+    --glow-purple: 270 100% 60%;
+    --glow-blue: 270 100% 40%;
+    --glow-gold: 270 80% 70%;
   }
 
   .dark {
-    --background: 220 15% 6%;
-    --foreground: 220 25% 95%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 15% 8%;
-    --card-foreground: 220 25% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 15% 8%;
-    --popover-foreground: 220 25% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 260 80% 65%;
-    --primary-foreground: 220 15% 6%;
+    --primary: 270 100% 70%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 220 25% 95%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 15% 12%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 280 100% 80%;
-    --accent-foreground: 220 15% 6%;
+    --accent: 270 100% 80%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 260 80% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 270 100% 70%;
 
-    --sidebar-background: 220 15% 4%;
-    --sidebar-foreground: 220 25% 90%;
-    --sidebar-primary: 260 80% 65%;
-    --sidebar-primary-foreground: 220 15% 6%;
-    --sidebar-accent: 220 15% 12%;
-    --sidebar-accent-foreground: 220 25% 90%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 260 80% 65%;
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 270 100% 70%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 270 100% 70%;
 
-    /* Dark mode music colors */
-    --music-50: 220 15% 12%;
-    --music-100: 220 20% 18%;
-    --music-200: 220 25% 25%;
-    --music-300: 220 30% 35%;
-    --music-400: 220 40% 45%;
-    --music-500: 220 50% 55%;
-    --music-600: 240 60% 65%;
-    --music-700: 260 70% 75%;
-    --music-800: 280 80% 85%;
-    --music-900: 290 90% 90%;
-    --music-950: 295 95% 95%;
+    /* Dark mode black and purple colors */
+    --music-50: 0 0% 12%;
+    --music-100: 0 0% 18%;
+    --music-200: 0 0% 25%;
+    --music-300: 270 10% 35%;
+    --music-400: 270 15% 45%;
+    --music-500: 270 20% 55%;
+    --music-600: 270 30% 65%;
+    --music-700: 270 40% 75%;
+    --music-800: 270 50% 85%;
+    --music-900: 270 60% 90%;
+    --music-950: 270 70% 95%;
 
     /* Dark mode emotion colors */
-    --emotion-purple: 280 100% 80%;
-    --emotion-blue: 240 100% 80%;
-    --emotion-gold: 45 100% 70%;
+    --emotion-purple: 270 100% 80%;
+    --emotion-blue: 270 80% 70%;
+    --emotion-gold: 270 60% 80%;
 
     /* Dark mode glowing colors */
-    --glow-purple: 280 100% 80%;
-    --glow-blue: 240 100% 80%;
-    --glow-gold: 45 100% 70%;
+    --glow-purple: 270 100% 80%;
+    --glow-blue: 270 80% 70%;
+    --glow-gold: 270 60% 80%;
   }
 }
 
