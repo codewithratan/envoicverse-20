@@ -15,10 +15,10 @@ export default function ShootingStarsDemo() {
 
       {/* Header */}
       <div className="absolute top-8 left-8 z-20">
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           className="border-purple-400 text-purple-300 hover:bg-purple-900/20"
-          onClick={() => window.location.href = '/'}
+          onClick={() => (window.location.href = "/")}
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Home
@@ -32,31 +32,32 @@ export default function ShootingStarsDemo() {
             <Music className="w-8 h-8 text-white" />
           </div>
         </div>
-        
+
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 bg-gradient-to-r from-purple-400 via-purple-300 to-white bg-clip-text text-transparent">
           Shooting Stars Effect
         </h1>
-        
+
         <p className="text-lg md:text-xl text-purple-200 max-w-2xl mx-auto mb-12">
-          A mesmerizing background effect with customizable shooting stars traversing across the screen. 
-          Perfect for creating immersive musical experiences.
+          A mesmerizing background effect with customizable shooting stars
+          traversing across the screen. Perfect for creating immersive musical
+          experiences.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button 
+          <Button
             size="lg"
             className="bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-700 hover:to-purple-600 glow"
-            onClick={() => window.location.href = '/demo'}
+            onClick={() => (window.location.href = "/demo")}
           >
             <Sparkles className="w-5 h-5 mr-2" />
             View More Effects
           </Button>
-          
-          <Button 
+
+          <Button
             variant="outline"
             size="lg"
             className="border-purple-400 text-purple-300 hover:bg-purple-900/20"
-            onClick={() => window.location.href = '/'}
+            onClick={() => (window.location.href = "/")}
           >
             <Music className="w-5 h-5 mr-2" />
             Back to Platform
@@ -92,13 +93,13 @@ export default function ShootingStarsDemo() {
 
       <style jsx>{`
         .stars {
-          background-image: 
-            radial-gradient(2px 2px at 20px 30px, #9333EA, rgba(0,0,0,0)),
-            radial-gradient(1px 1px at 40px 70px, #A855F7, rgba(0,0,0,0)),
-            radial-gradient(1px 1px at 50px 160px, #8B5CF6, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 90px 40px, #C084FC, rgba(0,0,0,0)),
-            radial-gradient(1px 1px at 130px 80px, #A78BFA, rgba(0,0,0,0)),
-            radial-gradient(2px 2px at 160px 120px, #7C3AED, rgba(0,0,0,0));
+          background-image:
+            radial-gradient(2px 2px at 20px 30px, #9333ea, rgba(0, 0, 0, 0)),
+            radial-gradient(1px 1px at 40px 70px, #a855f7, rgba(0, 0, 0, 0)),
+            radial-gradient(1px 1px at 50px 160px, #8b5cf6, rgba(0, 0, 0, 0)),
+            radial-gradient(2px 2px at 90px 40px, #c084fc, rgba(0, 0, 0, 0)),
+            radial-gradient(1px 1px at 130px 80px, #a78bfa, rgba(0, 0, 0, 0)),
+            radial-gradient(2px 2px at 160px 120px, #7c3aed, rgba(0, 0, 0, 0));
           background-repeat: repeat;
           background-size: 200px 200px;
           animation: twinkle 5s ease-in-out infinite;
@@ -106,9 +107,15 @@ export default function ShootingStarsDemo() {
         }
 
         @keyframes twinkle {
-          0% { opacity: 0.4; }
-          50% { opacity: 0.8; }
-          100% { opacity: 0.4; }
+          0% {
+            opacity: 0.4;
+          }
+          50% {
+            opacity: 0.8;
+          }
+          100% {
+            opacity: 0.4;
+          }
         }
       `}</style>
     </div>

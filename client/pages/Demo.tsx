@@ -1,26 +1,40 @@
 import { ParticleTextEffect } from "@/components/ui/particle-text-effect";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Sparkles, Music, Brain, Zap } from "lucide-react";
 
 export default function Demo() {
-  const musicWords = ["ENVOICVERSE", "MUSIC", "EMOTION", "AI", "ARTIST", "FESTIVAL", "DISCOVER"];
-  
+  const musicWords = [
+    "ENVOICVERSE",
+    "MUSIC",
+    "EMOTION",
+    "AI",
+    "ARTIST",
+    "FESTIVAL",
+    "DISCOVER",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-music-950 via-music-900 to-music-800">
       {/* Header */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-music-400 text-music-300 hover:bg-music-800"
-            onClick={() => window.location.href = '/'}
+            onClick={() => (window.location.href = "/")}
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Button>
-          
+
           <div className="flex items-center gap-2">
             <Badge className="bg-gradient-to-r from-emotion-purple to-emotion-blue text-white">
               <Sparkles className="w-3 h-3 mr-1" />
@@ -42,10 +56,7 @@ export default function Demo() {
 
       {/* Main Demo */}
       <div className="container mx-auto px-4">
-        <ParticleTextEffect 
-          words={musicWords}
-          className="mb-12"
-        />
+        <ParticleTextEffect words={musicWords} className="mb-12" />
 
         {/* Info Cards */}
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
@@ -56,7 +67,8 @@ export default function Demo() {
               </div>
               <CardTitle className="text-music-200">AI-Powered</CardTitle>
               <CardDescription className="text-music-400">
-                Advanced algorithms create dynamic, emotion-responsive visualizations
+                Advanced algorithms create dynamic, emotion-responsive
+                visualizations
               </CardDescription>
             </CardHeader>
           </Card>
@@ -89,35 +101,46 @@ export default function Demo() {
         {/* Technical Details */}
         <Card className="max-w-4xl mx-auto bg-music-800/30 border-music-600/30 backdrop-blur-sm mb-12">
           <CardHeader>
-            <CardTitle className="text-2xl text-music-200 text-center">How It Works</CardTitle>
+            <CardTitle className="text-2xl text-music-200 text-center">
+              How It Works
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-semibold text-music-300 mb-2">Particle Physics</h3>
+                <h3 className="text-lg font-semibold text-music-300 mb-2">
+                  Particle Physics
+                </h3>
                 <p className="text-music-400 text-sm">
-                  Each particle follows realistic physics with acceleration, velocity, and target-seeking behavior 
-                  to create smooth, organic text formations.
+                  Each particle follows realistic physics with acceleration,
+                  velocity, and target-seeking behavior to create smooth,
+                  organic text formations.
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-music-300 mb-2">Color Dynamics</h3>
+                <h3 className="text-lg font-semibold text-music-300 mb-2">
+                  Color Dynamics
+                </h3>
                 <p className="text-music-400 text-sm">
-                  Dynamic color blending system transitions between EnvoicVerse brand colors, 
-                  creating visually stunning text transformations.
+                  Dynamic color blending system transitions between EnvoicVerse
+                  brand colors, creating visually stunning text transformations.
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-music-300 mb-2">Canvas Rendering</h3>
+                <h3 className="text-lg font-semibold text-music-300 mb-2">
+                  Canvas Rendering
+                </h3>
                 <p className="text-music-400 text-sm">
-                  High-performance HTML5 Canvas rendering with motion blur effects 
-                  and 60fps animations for smooth visual experience.
+                  High-performance HTML5 Canvas rendering with motion blur
+                  effects and 60fps animations for smooth visual experience.
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-music-300 mb-2">User Interaction</h3>
+                <h3 className="text-lg font-semibold text-music-300 mb-2">
+                  User Interaction
+                </h3>
                 <p className="text-music-400 text-sm">
-                  Real-time mouse interaction allows users to destroy particles, 
+                  Real-time mouse interaction allows users to destroy particles,
                   creating engaging and playful user experiences.
                 </p>
               </div>
@@ -131,13 +154,14 @@ export default function Demo() {
             Ready to Experience EnvoicVerse?
           </h2>
           <p className="text-music-400 mb-8 max-w-2xl mx-auto">
-            This is just a glimpse of the innovative technology powering our emotion-driven music platform
+            This is just a glimpse of the innovative technology powering our
+            emotion-driven music platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-700 hover:to-purple-600 glow"
-              onClick={() => window.location.href = '/'}
+              onClick={() => (window.location.href = "/")}
             >
               <Music className="w-5 h-5 mr-2" />
               Explore Platform
@@ -147,7 +171,7 @@ export default function Demo() {
               variant="outline"
               size="lg"
               className="border-purple-400 text-purple-300 hover:bg-purple-900/20"
-              onClick={() => window.location.href = '/shooting-stars'}
+              onClick={() => (window.location.href = "/shooting-stars")}
             >
               <Sparkles className="w-5 h-5 mr-2" />
               Shooting Stars Demo
