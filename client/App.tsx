@@ -12,9 +12,6 @@ import Recipes from "./pages/Recipes";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
-// Add theme class to body
-document.body.className = 'min-h-screen bg-gradient-to-br from-guac-50 via-background to-guac-100';
-
 const queryClient = new QueryClient();
 
 const App = () => (
