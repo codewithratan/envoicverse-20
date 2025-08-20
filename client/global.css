@@ -134,3 +134,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .glow {
+    box-shadow: 0 0 20px hsl(var(--glow-green) / 0.5),
+                0 0 40px hsl(var(--glow-green) / 0.3),
+                0 0 60px hsl(var(--glow-green) / 0.1);
+  }
+
+  .glow-lime {
+    box-shadow: 0 0 15px hsl(var(--glow-lime) / 0.6),
+                0 0 30px hsl(var(--glow-lime) / 0.4),
+                0 0 45px hsl(var(--glow-lime) / 0.2);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--glow-green) / 0.8),
+                 0 0 20px hsl(var(--glow-green) / 0.6),
+                 0 0 30px hsl(var(--glow-green) / 0.4);
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from {
+      box-shadow: 0 0 20px hsl(var(--glow-green) / 0.3),
+                  0 0 40px hsl(var(--glow-green) / 0.2),
+                  0 0 60px hsl(var(--glow-green) / 0.1);
+    }
+    to {
+      box-shadow: 0 0 25px hsl(var(--glow-green) / 0.6),
+                  0 0 50px hsl(var(--glow-green) / 0.4),
+                  0 0 75px hsl(var(--glow-green) / 0.2);
+    }
+  }
+}
