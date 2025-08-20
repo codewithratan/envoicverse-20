@@ -92,32 +92,32 @@ export default function Index() {
       {/* Hero Section */}
       <div className="relative overflow-hidden z-10">
         {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-music-600/20 via-emotion-purple/10 to-emotion-blue/20 animate-pulse" />
-        <div className="absolute top-20 left-10 w-64 h-64 bg-emotion-purple/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-emotion-blue/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 via-purple-500/5 to-purple-400/10 animate-pulse" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl animate-pulse" />
         
         <div className="relative container mx-auto px-4 py-20 lg:py-32">
           <div className="text-center max-w-5xl mx-auto">
             {/* Logo/Brand */}
-            <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-music-500/10 rounded-full border border-music-300/30 glow">
-              <div className="w-8 h-8 bg-gradient-to-r from-emotion-purple to-emotion-blue rounded-full flex items-center justify-center">
+            <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-purple-500/10 rounded-full border border-purple-300/30 glow">
+              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center">
                 <Music className="w-4 h-4 text-white" />
               </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-music-700 to-music-600 bg-clip-text text-transparent">
+              <span className="text-lg font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent">
                 ENVOICVERSE
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-music-600 via-emotion-purple to-emotion-blue bg-clip-text text-transparent text-glow leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-purple-400 via-purple-300 to-white bg-clip-text text-transparent text-glow leading-tight">
               Music That Understands Your Soul
             </h1>
             
-            <p className="text-xl md:text-2xl text-music-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed">
               India's first emotion-driven, artist-first music ecosystem. Powered by AI that personalizes every beat to your emotional journey.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <Badge variant="secondary" className="px-6 py-3 bg-music-200/50 text-music-800 border-music-300 text-lg">
+              <Badge variant="secondary" className="px-6 py-3 bg-purple-600/20 text-purple-100 border-purple-400/50 text-lg">
                 <Brain className="w-5 h-5 mr-2" />
                 AI-Powered
               </Badge>
