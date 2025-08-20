@@ -20,6 +20,7 @@ import {
   Globe,
   Gift
 } from "lucide-react";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 
 const features = [
   {
