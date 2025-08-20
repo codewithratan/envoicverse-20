@@ -10,6 +10,7 @@ import Navigation from "./components/Navigation";
 import Index from "./pages/Index";
 import Artists from "./pages/Artists";
 import Demo from "./pages/Demo";
+import ShootingStarsDemo from "./pages/ShootingStarsDemo";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/shooting-stars" element={<ShootingStarsDemo />} />
           <Route
             path="/community"
             element={
