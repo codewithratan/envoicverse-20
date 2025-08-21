@@ -36,7 +36,10 @@ const App = () => (
               <Route path="/shooting-stars" element={<ShootingStarsDemo />} />
               <Route path="/footer-demo" element={<FooterDemo />} />
               <Route path="/globe-demo" element={<GlobeDemo />} />
-              <Route path="/tubelight-navbar" element={<TubelightNavbarDemo />} />
+              <Route
+                path="/tubelight-navbar"
+                element={<TubelightNavbarDemo />}
+              />
               <Route
                 path="/community"
                 element={

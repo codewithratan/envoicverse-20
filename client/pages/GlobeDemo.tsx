@@ -1,4 +1,4 @@
-import { Globe } from "@/components/ui/globe"
+import { Globe } from "@/components/ui/globe";
 
 export function GlobeDemo() {
   return (
@@ -9,7 +9,7 @@ export function GlobeDemo() {
       <Globe className="top-28" />
       <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(128,0,128,0.2),rgba(0,0,0,0))]" />
     </div>
-  )
+  );
 }
 
 export default function GlobeDemoPage() {
@@ -21,14 +21,15 @@ export default function GlobeDemoPage() {
             Interactive Globe
           </h1>
           <p className="text-purple-200 text-lg max-w-2xl mx-auto">
-            Experience our interactive 3D globe powered by COBE. Drag to rotate and explore the world with smooth animations.
+            Experience our interactive 3D globe powered by COBE. Drag to rotate
+            and explore the world with smooth animations.
           </p>
         </div>
-        
+
         <div className="flex justify-center">
           <GlobeDemo />
         </div>
-        
+
         <div className="mt-12 text-center">
           <div className="bg-black/40 border border-purple-500/20 rounded-lg p-6 max-w-md mx-auto">
             <h3 className="text-purple-400 font-semibold mb-2">Features</h3>
@@ -42,5 +43,5 @@ export default function GlobeDemoPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
