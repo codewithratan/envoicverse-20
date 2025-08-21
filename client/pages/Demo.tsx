@@ -176,6 +176,16 @@ export default function Demo() {
               <Sparkles className="w-5 h-5 mr-2" />
               Shooting Stars Demo
             </Button>
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-purple-400 text-purple-300 hover:bg-purple-900/20"
+              onClick={() => (window.location.href = "/footer-demo")}
+            >
+              <Music className="w-5 h-5 mr-2" />
+              Footer Component
+            </Button>
           </div>
         </div>
       </div>
