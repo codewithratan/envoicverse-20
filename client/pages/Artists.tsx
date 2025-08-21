@@ -172,7 +172,7 @@ export default function Artists() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-music-600 via-emotion-purple to-emotion-blue bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-purple-300 to-white bg-clip-text text-transparent">
               Your Music, Your Rules, Your Success
             </h1>
 
