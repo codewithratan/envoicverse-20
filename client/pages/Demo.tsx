@@ -196,6 +196,16 @@ export default function Demo() {
               🌍
               Interactive Globe
             </Button>
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-purple-400 text-purple-300 hover:bg-purple-900/20"
+              onClick={() => (window.location.href = "/tubelight-navbar")}
+            >
+              💡
+              Tubelight Navbar
+            </Button>
           </div>
         </div>
       </div>
