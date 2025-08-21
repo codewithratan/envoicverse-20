@@ -14,6 +14,7 @@ import Demo from "./pages/Demo";
 import ShootingStarsDemo from "./pages/ShootingStarsDemo";
 import FooterDemo from "./pages/FooterDemo";
 import GlobeDemo from "./pages/GlobeDemo";
+import TubelightNavbarDemo from "./pages/TubelightNavbarDemo";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/shooting-stars" element={<ShootingStarsDemo />} />
               <Route path="/footer-demo" element={<FooterDemo />} />
               <Route path="/globe-demo" element={<GlobeDemo />} />
+              <Route path="/tubelight-navbar" element={<TubelightNavbarDemo />} />
               <Route
                 path="/community"
                 element={
