@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import { EnvoicVerseFooter } from "./components/ui/footer-section";
 import Index from "./pages/Index";
 import Artists from "./pages/Artists";
 import Demo from "./pages/Demo";
@@ -22,8 +23,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navigation />
-        <Routes>
+        <div className="min-h-screen flex flex-col">
+          <Navigation />
+          <main className="flex-1">
+            <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/demo" element={<Demo />} />
@@ -64,9 +67,12 @@ const App = () => (
               />
             }
           />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <EnvoicVerseFooter />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
