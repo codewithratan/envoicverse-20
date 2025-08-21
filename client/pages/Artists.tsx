@@ -159,7 +159,7 @@ const successStories = [
 
 export default function Artists() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-music-50 via-background to-music-100">
+    <div className="bg-gradient-to-br from-black via-black-800 to-purple-950">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-music-600/20 to-emotion-purple/20 animate-pulse" />
