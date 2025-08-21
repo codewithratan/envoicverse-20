@@ -13,6 +13,7 @@ import Artists from "./pages/Artists";
 import Demo from "./pages/Demo";
 import ShootingStarsDemo from "./pages/ShootingStarsDemo";
 import FooterDemo from "./pages/FooterDemo";
+import GlobeDemo from "./pages/GlobeDemo";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
