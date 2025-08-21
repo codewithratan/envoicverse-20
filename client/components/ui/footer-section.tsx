@@ -1,41 +1,41 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
+import * as React from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { 
-  Facebook, 
-  Instagram, 
-  Linkedin, 
-  Moon, 
-  Send, 
-  Sun, 
-  Twitter, 
-  Music, 
-  Mail, 
-  Phone, 
+} from "@/components/ui/tooltip";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Moon,
+  Send,
+  Sun,
+  Twitter,
+  Music,
+  Mail,
+  Phone,
   MapPin,
-  Heart
-} from "lucide-react"
+  Heart,
+} from "lucide-react";
 
 function EnvoicVerseFooter() {
-  const [isDarkMode, setIsDarkMode] = React.useState(true)
+  const [isDarkMode, setIsDarkMode] = React.useState(true);
 
   React.useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add("dark")
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.remove("dark");
     }
-  }, [isDarkMode])
+  }, [isDarkMode]);
 
   return (
     <footer className="relative border-t border-purple-800/50 bg-gradient-to-b from-black to-purple-950 text-purple-100 transition-colors duration-300">
@@ -43,10 +43,9 @@ function EnvoicVerseFooter() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(147,51,234,0.1)_0%,rgba(0,0,0,0)_50%)]" />
       <div className="absolute top-0 left-1/4 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-40 h-40 bg-purple-600/10 rounded-full blur-3xl" />
-      
+
       <div className="relative container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          
           {/* Newsletter Section */}
           <div className="relative">
             <div className="flex items-center gap-2 mb-4">
@@ -57,9 +56,12 @@ function EnvoicVerseFooter() {
                 EnvoicVerse
               </h2>
             </div>
-            <h3 className="mb-4 text-lg font-semibold text-purple-200">Stay In The Loop</h3>
+            <h3 className="mb-4 text-lg font-semibold text-purple-200">
+              Stay In The Loop
+            </h3>
             <p className="mb-6 text-purple-300">
-              Get the latest updates on new artists, exclusive releases, and platform features.
+              Get the latest updates on new artists, exclusive releases, and
+              platform features.
             </p>
             <form className="relative">
               <Input
@@ -81,24 +83,44 @@ function EnvoicVerseFooter() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-purple-200">Platform</h3>
+            <h3 className="mb-4 text-lg font-semibold text-purple-200">
+              Platform
+            </h3>
             <nav className="space-y-2 text-sm">
-              <a href="/" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 Home
               </a>
-              <a href="/artists" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/artists"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 For Artists
               </a>
-              <a href="/demo" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/demo"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 Tech Demo
               </a>
-              <a href="/shooting-stars" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/shooting-stars"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 Shooting Stars
               </a>
-              <a href="/community" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/community"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 Community
               </a>
-              <a href="/festivals" className="block transition-colors hover:text-purple-400 text-purple-300">
+              <a
+                href="/festivals"
+                className="block transition-colors hover:text-purple-400 text-purple-300"
+              >
                 Festivals
               </a>
             </nav>
@@ -106,7 +128,9 @@ function EnvoicVerseFooter() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-purple-200">Connect</h3>
+            <h3 className="mb-4 text-lg font-semibold text-purple-200">
+              Connect
+            </h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2 text-purple-300">
                 <MapPin className="h-4 w-4 text-purple-400" />
@@ -125,14 +149,16 @@ function EnvoicVerseFooter() {
 
           {/* Social & Theme */}
           <div className="relative">
-            <h3 className="mb-4 text-lg font-semibold text-purple-200">Follow Us</h3>
+            <h3 className="mb-4 text-lg font-semibold text-purple-200">
+              Follow Us
+            </h3>
             <div className="mb-6 flex space-x-3">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-purple-600/50 bg-purple-900/20 hover:bg-purple-800/30 text-purple-300 hover:text-purple-200"
                     >
                       <Facebook className="h-4 w-4" />
@@ -144,13 +170,13 @@ function EnvoicVerseFooter() {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              
+
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-purple-600/50 bg-purple-900/20 hover:bg-purple-800/30 text-purple-300 hover:text-purple-200"
                     >
                       <Twitter className="h-4 w-4" />
@@ -162,13 +188,13 @@ function EnvoicVerseFooter() {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              
+
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-purple-600/50 bg-purple-900/20 hover:bg-purple-800/30 text-purple-300 hover:text-purple-200"
                     >
                       <Instagram className="h-4 w-4" />
@@ -180,13 +206,13 @@ function EnvoicVerseFooter() {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              
+
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-purple-600/50 bg-purple-900/20 hover:bg-purple-800/30 text-purple-300 hover:text-purple-200"
                     >
                       <Linkedin className="h-4 w-4" />
@@ -199,7 +225,7 @@ function EnvoicVerseFooter() {
                 </Tooltip>
               </TooltipProvider>
             </div>
-            
+
             {/* Theme Toggle */}
             <div className="flex items-center space-x-2 text-purple-300">
               <Sun className="h-4 w-4" />
@@ -225,20 +251,29 @@ function EnvoicVerseFooter() {
             <span>for music lovers.</span>
           </div>
           <nav className="flex gap-6 text-sm">
-            <a href="#" className="transition-colors hover:text-purple-400 text-purple-300">
+            <a
+              href="#"
+              className="transition-colors hover:text-purple-400 text-purple-300"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="transition-colors hover:text-purple-400 text-purple-300">
+            <a
+              href="#"
+              className="transition-colors hover:text-purple-400 text-purple-300"
+            >
               Terms of Service
             </a>
-            <a href="#" className="transition-colors hover:text-purple-400 text-purple-300">
+            <a
+              href="#"
+              className="transition-colors hover:text-purple-400 text-purple-300"
+            >
               Cookie Settings
             </a>
           </nav>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export { EnvoicVerseFooter }
+export { EnvoicVerseFooter };

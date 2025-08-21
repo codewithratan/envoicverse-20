@@ -28,47 +28,47 @@ const App = () => (
           <Navigation />
           <main className="flex-1">
             <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/artists" element={<Artists />} />
-          <Route path="/demo" element={<Demo />} />
-          <Route path="/shooting-stars" element={<ShootingStarsDemo />} />
-          <Route path="/footer-demo" element={<FooterDemo />} />
-          <Route
-            path="/community"
-            element={
-              <Placeholder
-                title="Music Community"
-                description="Connect with fellow music lovers, discover new artists, and engage with the emotion-driven music ecosystem."
+              <Route path="/" element={<Index />} />
+              <Route path="/artists" element={<Artists />} />
+              <Route path="/demo" element={<Demo />} />
+              <Route path="/shooting-stars" element={<ShootingStarsDemo />} />
+              <Route path="/footer-demo" element={<FooterDemo />} />
+              <Route
+                path="/community"
+                element={
+                  <Placeholder
+                    title="Music Community"
+                    description="Connect with fellow music lovers, discover new artists, and engage with the emotion-driven music ecosystem."
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/festivals"
-            element={
-              <Placeholder
-                title="Festival Network"
-                description="Explore our partner festivals and live events where digital artists transition to real-world stages."
+              <Route
+                path="/festivals"
+                element={
+                  <Placeholder
+                    title="Festival Network"
+                    description="Explore our partner festivals and live events where digital artists transition to real-world stages."
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <Placeholder
-                title="About EnvoicVerse"
-                description="Learn about our mission to create India's most inclusive and emotionally intelligent music ecosystem."
+              <Route
+                path="/about"
+                element={
+                  <Placeholder
+                    title="About EnvoicVerse"
+                    description="Learn about our mission to create India's most inclusive and emotionally intelligent music ecosystem."
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <Placeholder
-                title="Get in Touch"
-                description="Have questions about our platform? Want to partner with us? We'd love to hear from you!"
+              <Route
+                path="/contact"
+                element={
+                  <Placeholder
+                    title="Get in Touch"
+                    description="Have questions about our platform? Want to partner with us? We'd love to hear from you!"
+                  />
+                }
               />
-            }
-          />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
