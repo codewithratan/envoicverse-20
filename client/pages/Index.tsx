@@ -104,7 +104,7 @@ export default function Index() {
   const [isDemoPlaying, setIsDemoPlaying] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-black-800 to-purple-950 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-black via-black-800 to-purple-950 relative overflow-hidden">
       {/* Shooting Stars Background */}
       <ShootingStars
         starColor="#9333EA"
